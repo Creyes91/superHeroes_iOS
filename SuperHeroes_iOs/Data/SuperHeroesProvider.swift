@@ -21,7 +21,7 @@ class SuperHeroesProvider
         
         let superHeroesResponse = try JSONDecoder().decode(SuperHeroesResponse.self, from: data)
         
-        return superHeroesResponse.result
+        return superHeroesResponse.results
         
         
     }

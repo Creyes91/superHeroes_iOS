@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2DA1C382D147A8E00D4F645 /* SuperHeroeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */; };
+		B2DA1C3A2D14897300D4F645 /* DeatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C392D14897300D4F645 /* DeatailViewController.swift */; };
+		B2DA1C3D2D148EB100D4F645 /* UiImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */; };
 		B2E508DD2D134F1C008993F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E508D42D134F1C008993F5 /* Assets.xcassets */; };
 		B2E508DF2D134F1C008993F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E508D72D134F1C008993F5 /* LaunchScreen.storyboard */; };
 		B2E508E02D134F1C008993F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E508D92D134F1C008993F5 /* Main.storyboard */; };
@@ -15,10 +18,12 @@
 		B2E508E32D134F1C008993F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E508DB2D134F1C008993F5 /* ViewController.swift */; };
 		B2E508E72D13521B008993F5 /* SuperHeroesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E508E62D13521B008993F5 /* SuperHeroesResponse.swift */; };
 		B2E508EB2D13524A008993F5 /* SuperHeroesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E508EA2D13524A008993F5 /* SuperHeroesProvider.swift */; };
-		B2E508EE2D1360B9008993F5 /* SuperHeroeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E508ED2D1360B9008993F5 /* SuperHeroeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroeViewCell.swift; sourceTree = "<group>"; };
+		B2DA1C392D14897300D4F645 /* DeatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailViewController.swift; sourceTree = "<group>"; };
+		B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImageExtensions.swift; sourceTree = "<group>"; };
 		B2E508BB2D13481A008993F5 /* SuperHeroes_iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroes_iOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E508D32D134F1C008993F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E508D42D134F1C008993F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +34,6 @@
 		B2E508DB2D134F1C008993F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2E508E62D13521B008993F5 /* SuperHeroesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesResponse.swift; sourceTree = "<group>"; };
 		B2E508EA2D13524A008993F5 /* SuperHeroesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesProvider.swift; sourceTree = "<group>"; };
-		B2E508ED2D1360B9008993F5 /* SuperHeroeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2DA1C3B2D148E5300D4F645 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B2E508B22D13481A008993F5 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				B2E508E42D134F23008993F5 /* ViewControllers */,
+				B2E508EC2D13609B008993F5 /* ViewCells */,
+				B2E508E52D1351F4008993F5 /* Data */,
+				B2DA1C3B2D148E5300D4F645 /* Utils */,
 				B2E508D32D134F1C008993F5 /* AppDelegate.swift */,
 				B2E508D42D134F1C008993F5 /* Assets.xcassets */,
 				B2E508D52D134F1C008993F5 /* Info.plist */,
@@ -77,8 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E508DB2D134F1C008993F5 /* ViewController.swift */,
-				B2E508EC2D13609B008993F5 /* ViewCells */,
-				B2E508E52D1351F4008993F5 /* Data */,
+				B2DA1C392D14897300D4F645 /* DeatailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -95,7 +109,7 @@
 		B2E508EC2D13609B008993F5 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				B2E508ED2D1360B9008993F5 /* SuperHeroeViewCell.swift */,
+				B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -175,8 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E508E72D13521B008993F5 /* SuperHeroesResponse.swift in Sources */,
+				B2DA1C3A2D14897300D4F645 /* DeatailViewController.swift in Sources */,
 				B2E508EB2D13524A008993F5 /* SuperHeroesProvider.swift in Sources */,
-				B2E508EE2D1360B9008993F5 /* SuperHeroeViewCell.swift in Sources */,
+				B2DA1C3D2D148EB100D4F645 /* UiImageExtensions.swift in Sources */,
+				B2DA1C382D147A8E00D4F645 /* SuperHeroeViewCell.swift in Sources */,
 				B2E508E12D134F1C008993F5 /* AppDelegate.swift in Sources */,
 				B2E508E22D134F1C008993F5 /* SceneDelegate.swift in Sources */,
 				B2E508E32D134F1C008993F5 /* ViewController.swift in Sources */,
