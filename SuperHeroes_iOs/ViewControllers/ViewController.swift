@@ -50,11 +50,12 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SuperHeroeViewCell
-        
+        cell.indicatorView.startAnimating()
         let superHeroe = list[indexPath.row]
         
         cell.loadData(superheroe: superHeroe)
-        cell.indicatorView.stopAnimating()
+       
+       // cell.indicatorView.stopAnimating()
         // implementar metodo render que pinte cada cell
         return cell
     }
@@ -70,6 +71,8 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
         let cell = tableView.cellForRow(at: indexPath) as? SuperHeroeViewCell
         
         cell?.superImageView.saveImageToCache(forkey: superHeroe.name)
+        tableView.deselectRow(at: indexPath, animated: true)
+       
        
     }
     

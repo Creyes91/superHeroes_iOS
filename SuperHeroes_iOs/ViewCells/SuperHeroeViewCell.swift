@@ -17,7 +17,7 @@ class SuperHeroeViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         indicatorView.hidesWhenStopped = true
-        indicatorView.startAnimating()
+        
     }
     
     
@@ -33,7 +33,7 @@ class SuperHeroeViewCell: UITableViewCell {
         
         nameSuperLabel.text = superheroe.name
         superImageView.loadFrom(url: superheroe.image.url)
-       // indicatorView.stopAnimating()
+       
     }
 
 }
