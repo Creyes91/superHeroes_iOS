@@ -97,7 +97,7 @@
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55V-Yq-muC">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="335"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg4-gL-Pmt">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intelligence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg4-gL-Pmt">
                                                         <rect key="frame" x="8" y="31" width="101" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -208,8 +208,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRX-er-gks">
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRX-er-gks">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="335"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Real Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gty-jA-Whd">
                                                         <rect key="frame" x="43" y="54" width="342" height="21"/>
@@ -240,11 +241,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="55V-Yq-muC" firstAttribute="leading" secondItem="lhG-N9-WOc" secondAttribute="leading" id="B5s-JH-EWb"/>
-                                            <constraint firstItem="lhG-N9-WOc" firstAttribute="trailing" secondItem="zRX-er-gks" secondAttribute="trailing" id="ECJ-h0-aSx"/>
                                             <constraint firstItem="lhG-N9-WOc" firstAttribute="bottom" secondItem="55V-Yq-muC" secondAttribute="bottom" id="UXk-48-D6n"/>
-                                            <constraint firstItem="zRX-er-gks" firstAttribute="top" secondItem="lhG-N9-WOc" secondAttribute="top" id="ev6-32-WSj"/>
-                                            <constraint firstItem="lhG-N9-WOc" firstAttribute="bottom" secondItem="zRX-er-gks" secondAttribute="bottom" id="h6b-4h-MoM"/>
-                                            <constraint firstItem="zRX-er-gks" firstAttribute="leading" secondItem="lhG-N9-WOc" secondAttribute="leading" id="raK-qn-n3N"/>
                                             <constraint firstItem="55V-Yq-muC" firstAttribute="top" secondItem="lhG-N9-WOc" secondAttribute="top" id="xGE-fo-cfT"/>
                                             <constraint firstItem="lhG-N9-WOc" firstAttribute="trailing" secondItem="55V-Yq-muC" secondAttribute="trailing" id="yp1-de-4gX"/>
                                         </constraints>

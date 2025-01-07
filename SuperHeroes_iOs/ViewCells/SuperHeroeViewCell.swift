@@ -30,10 +30,11 @@ class SuperHeroeViewCell: UITableViewCell {
     
     func loadData(superheroe: SuperHeroe)
     {
-        
+        superImageView.image = nil
+        self.indicatorView.startAnimating()
         nameSuperLabel.text = superheroe.name
         superImageView.loadFrom(url: superheroe.image.url)
-       
+        self.indicatorView.stopAnimating()
     }
 
 }

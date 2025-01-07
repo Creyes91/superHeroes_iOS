@@ -31,18 +31,23 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     }
     
 
-    // MARK searchController
+    // MARK: searchController
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let query = searchBar.text!
         
-        searchBy(name: query)
+        if (query.isEmpty){
+            searchBy(name: "a")
+           
+        } else {
+            
+            searchBy(name: query)}
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBy(name: "a")
     }
-    //MARK TableViewDataSource
+    //MARK: TableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -50,7 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SuperHeroeViewCell
-        cell.indicatorView.startAnimating()
+        //cell.indicatorView.startAnimating()
         let superHeroe = list[indexPath.row]
         
         cell.loadData(superheroe: superHeroe)

@@ -45,20 +45,8 @@ class DeatailViewController: UIViewController {
         superImageView.loadImageOfCache(forKey: superHeroe.name)
         detailView.layer.cornerRadius = 16
         
-        
-        inteligenceStat.text = superHeroe.powerstats.intelligence
-        inteligenceBar.progress = (Float(inteligenceStat.text!)!)/100
-        
-        let aux = superHeroe.biography.realName
-        
-        if (aux == "")
-        {
-            
-            fullNameLabel.text! += " No Real Name"
-        }else{
-            fullNameLabel.text! += " \(aux)"
-        }
-        
+        setData()
+       
 
         // Do any additional setup after loading the view.
     }
@@ -81,6 +69,26 @@ class DeatailViewController: UIViewController {
         
     }
     
+    func setData()
+    {
+        inteligenceStat.text = superHeroe.powerstats.intelligence
+        inteligenceBar.progress = (Float(inteligenceStat.text!)!)/100
+        
+        let aux = superHeroe.biography.realName
+        
+        if (aux == "")
+        {
+            
+            fullNameLabel.text! += " No Real Name"
+        }else{
+            fullNameLabel.text! += " \(aux)"
+        }
+        
+        
+        alterEgoLabel.text! += superHeroe.biography.placeOfBirth
+        
+        
+    }
 
     /*
     // MARK: - Navigation
