@@ -7,18 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+
     
     
-    @IBOutlet weak var tableView: UITableView!
-    
+    //@IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var CollectionView: UICollectionView!
     var list: [SuperHeroe] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CollectionView.delegate = self
+        CollectionView.dataSource = self
         
-        
-        tableView.dataSource = self
+       // tableView.dataSource = self
         searchBy(name: "a")
         // Do any additional setup after loading the view.
         
@@ -29,6 +31,27 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
        
        
     }
+    
+    // MARK: CollectionViewDataSource
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SuperHeroCollectionViewCell
+        
+        let superHeroe = list[indexPath.row]
+        
+        cell.loadData(superheroe: superHeroe)
+        
+        return cell
+    }
+    
+
+    //MARK: CollectionView
+    
+    
     
 
     // MARK: searchController

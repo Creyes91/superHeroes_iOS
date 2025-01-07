@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20732B02D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20732AF2D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift */; };
 		B2DA1C382D147A8E00D4F645 /* SuperHeroeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */; };
 		B2DA1C3A2D14897300D4F645 /* DeatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C392D14897300D4F645 /* DeatailViewController.swift */; };
 		B2DA1C3D2D148EB100D4F645 /* UiImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B20732AF2D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroeViewCell.swift; sourceTree = "<group>"; };
 		B2DA1C392D14897300D4F645 /* DeatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailViewController.swift; sourceTree = "<group>"; };
 		B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImageExtensions.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */,
+				B20732AF2D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				B2DA1C382D147A8E00D4F645 /* SuperHeroeViewCell.swift in Sources */,
 				B2E508E12D134F1C008993F5 /* AppDelegate.swift in Sources */,
 				B2E508E22D134F1C008993F5 /* SceneDelegate.swift in Sources */,
+				B20732B02D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift in Sources */,
 				B2E508E32D134F1C008993F5 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
