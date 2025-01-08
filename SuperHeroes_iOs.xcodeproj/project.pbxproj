@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B20732B02D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20732AF2D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift */; };
+		B2CBDC3E2D2F0A6F00C2516E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBDC3D2D2F0A6F00C2516E /* UIViewExtension.swift */; };
 		B2DA1C382D147A8E00D4F645 /* SuperHeroeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */; };
 		B2DA1C3A2D14897300D4F645 /* DeatailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C392D14897300D4F645 /* DeatailViewController.swift */; };
 		B2DA1C3D2D148EB100D4F645 /* UiImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B20732AF2D2DAD8A00AA4DF9 /* SuperHeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2CBDC3D2D2F0A6F00C2516E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B2DA1C372D147A8E00D4F645 /* SuperHeroeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroeViewCell.swift; sourceTree = "<group>"; };
 		B2DA1C392D14897300D4F645 /* DeatailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailViewController.swift; sourceTree = "<group>"; };
 		B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiImageExtensions.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DA1C3C2D148EB100D4F645 /* UiImageExtensions.swift */,
+				B2CBDC3D2D2F0A6F00C2516E /* UIViewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CBDC3E2D2F0A6F00C2516E /* UIViewExtension.swift in Sources */,
 				B2E508E72D13521B008993F5 /* SuperHeroesResponse.swift in Sources */,
 				B2DA1C3A2D14897300D4F645 /* DeatailViewController.swift in Sources */,
 				B2E508EB2D13524A008993F5 /* SuperHeroesProvider.swift in Sources */,
